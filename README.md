@@ -1,5 +1,2 @@
-# me-learning-sdl
-Just me learning some SDL2
-
-
-# i will update more on this later.
+# the moving square
+just a square that moves in sdl
