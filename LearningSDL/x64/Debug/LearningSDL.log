@@ -1,4 +1,5 @@
 ﻿  main.cpp
+E:\Coding\C\C++\LearningSDL\LearningSDL\main.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   window.cpp
   Generating Code...
   LearningSDL.vcxproj -> E:\Coding\C\C++\LearningSDL\x64\Debug\LearningSDL.exe

@@ -47,28 +47,39 @@ bool Window::init()
 
 }
 
-void Window::pollEvents() 
+void Window::pollEvents(SDL_Event &event) 
 {
-	SDL_Event event;
+	
 
-	if (SDL_PollEvent(&event)) {
+	
 		switch (event.type) {
 		case SDL_QUIT:
 			_closed = true;
 			break;
+
+		case SDL_KEYDOWN:
+			switch (event.key.keysym.sym) {
+			case SDLK_ESCAPE:
+				_closed = true;
+				break;
+			}
+
+
 		default:
 			break;
 		
 				
 
-
-		}
 	}
 }
+
 void Window::clear() const {
+	SDL_RenderPresent(_renderer);
 	SDL_SetRenderDrawColor(_renderer, 0, 0, 200, 240);
 	SDL_RenderClear(_renderer);
-	SDL_RenderPresent(_renderer);
+
+	
+	
 
 	
 }
